@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root {
+    --blue: hsl(246, 80%, 60%);
+    --Light-red-work: hsl(15, 100%, 70%);
+    --Soft-blue: hsl(195, 74%, 62%);
+    --Light-red: hsl(348, 100%, 68%);
+    --Lime-green: hsl(145, 58%, 55%);
+    --Violet: hsl(264, 64%, 52%);
+    --Soft-orange: hsl(43, 84%, 65%);
+    --Very-dark-blue: hsl(226, 43%, 10%);
+    --Dark-blue: hsl(235, 46%, 20%);
+    --Desaturated-blue: hsl(235, 45%, 61%);
+    --Pale-Blue: hsl(236, 100%, 87%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--Very-dark-blue);
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: white;
+    font-family: "Rubik", sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    border-radius: 18px;
+    padding: 80px;
+    
+}
+
+.container-user{
+    background-color: var(--Dark-blue);
+    border-radius: 18px;
+    background-position: top right;
+    background-repeat: no-repeat;
+    position: relative;
+    grid-row: 1 / span 2;
+}
+
+.user-info {
+    background-color: var(--blue);
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    
+} 
+
+.user-info img{
+    border-radius: 50%;
+    border-radius: 2px solid white;
+    height: 60px;
+    margin-bottom: 1.5rem;
+}
+
+.user-info p{
+    font-size: 1.4rem;
+}
+
+.user-info h3{
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.timely{
+    display: flex;
+    border-radius: 5px;
+    justify-content: space-around;
+    padding: 2rem;
+    flex-direction: column; 
+    margin-bottom: 2rem; 
+}
+
+.timely a{
+    color: var(--Desaturated-blue);
+    text-decoration: none;
+}
+
+.timely a#daily:active{
+    font-weight: 500;
+}
+
+
+.details{
+    border-radius: 14px;
+    background-color: var(--Dark-blue);
+    bottom: 0;
+    left: 0;
+    padding: 1.5rem;
+    position: absolute;
+    background-position: top right;
+    background-repeat: no-repeat;
+    width: 100%;
+    
+}
+
+.minor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.bone{
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.work,
+.play,
+.study,
+.exercise,
+.social,
+.care {
+    background-color: var(--Dark-blue);
+    border-radius: 18px;
+    background-position: top right;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.work {
+    background-image: url(./images/icon-work.svg);
+    background-color: var(--Light-red-work);
+}
+
+.play {
+    background-image: url(./images/icon-play.svg);
+    background-color: var(--Soft-blue);
+}
+
+.study {
+    background-image: url(./images/icon-study.svg);
+    background-color: var(--Light-red);
+}
+
+.exercise {
+    background-image: url(./images/icon-exercise.svg);
+    background-color: var(--Lime-green);
+}
+
+.social {
+    background-image: url(./images/icon-social.svg);
+    background-color: var(--Violet);
+}
+
+.care {
+    background-image: url(./images/icon-self-care.svg);
+    background-color: var(--Soft-orange);
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
